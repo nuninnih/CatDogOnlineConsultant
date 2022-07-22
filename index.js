@@ -40,13 +40,45 @@ function getdata() {
     }
   }
 
+  return {
+    getname,
+    getage,
+    getgender,
+    gettype,
+    result,
+  };
+}
+
+function renderValidasi() {
+  let { getname, getage, getgender, gettype, result } = getdata();
   document.getElementById("getname").innerHTML = `Your pet's name is ${getname}`;
-  document.getElementById("getage").innerHTML = `Your pet's type is ${getage}`;
+  document.getElementById("getage").innerHTML = `Your pet's age is around ${getage} years old`;
   document.getElementById("getgender").innerHTML = `Your pet's age is ${getgender}`;
   document.getElementById("gettype").innerHTML = `Your pet's type is ${gettype}`;
   document.getElementById("getsymptom").innerHTML = `The symptoms are ${result}`;
 }
 
-function submit() {}
+function submit() {
+  window.location.replace("./result.html");
+}
 
-function edit() {}
+function edit() {
+  window.location.replace("./consult.html");
+}
+
+function renderEdit() {
+  //   let { getname, getage, getgender, gettype, result } = getdata();
+  //   console.log(getname, getage, getgender, gettype, result);
+  //   console.log(document.getElementById("typeCat"));
+  //   if (gettype === "cat") {
+  //     document.getElementById("typeCat").checked = "checked";
+  //   } else {
+  //     document.getElementById("typeDog").checked = "checked";
+  //   }
+  document.getElementById("petname").value = getname;
+
+  //   document.getElementById("getage").innerHTML = `Your pet's type is ${getage}`;
+  //   document.getElementById("getgender").innerHTML = `Your pet's age is aroun ${getgender} years old`;
+  //   document.getElementById("gettype").innerHTML = `Your pet's type is ${gettype}`;
+  //   document.getElementById("getsymptom").innerHTML = `The symptoms are ${result}`;
+}

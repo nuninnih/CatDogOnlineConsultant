@@ -11,7 +11,7 @@
     <link href="./style.css" rel="stylesheet" />
     <title>Consult Page</title>
   </head>
-  <body>
+  <body onload="renderEdit()">
     <!-- start logo -->
     <section class="jumbotron text-center">
       <img src="./images/logo.png" alt="Logo CatDog" class="rounded-circle" />
@@ -39,11 +39,11 @@
               </div>
               <div class="col">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="type" id="type" value="cat" />
+                  <input class="form-check-input" type="radio" name="type" id="typeCat" value="cat" />
                   <label class="form-check-label" for="cat">Cat</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="type" id="type" value="dog" />
+                  <input class="form-check-input" type="radio" name="type" id="typeDog" value="dog" />
                   <label class="form-check-label" for="dog">Dog</label>
                 </div>
               </div>
@@ -69,11 +69,11 @@
               </div>
               <div class="col">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="gender" id="gender" value="male" />
+                  <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" />
                   <label class="form-check-label" for="male">Male</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="gender" id="gender" value="female" />
+                  <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" />
                   <label class="form-check-label" for="female">Female</label>
                 </div>
               </div>
