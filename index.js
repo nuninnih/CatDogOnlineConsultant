@@ -17,8 +17,17 @@ function register(){
     console.log(arrDiagnosa);
     localStorage.setItem('arrDiagnosa', arrDiagnosa)
     // buat setItem buat value sisanya
+    localStorage.setItem('petname', petname)
+    localStorage.setItem('age', age)
+    localStorage.setItem('gender', gender)
+    localStorage.setItem('type', type)
 
 }
 
 localStorage.getItem('arrDiagnosa')
+localStorage.getItem('petname', petname)
+localStorage.getItem('age', age)
+localStorage.getItem('gender', gender)
+localStorage.getItem('type', type)
 let diagnosa = JSON.parse(arrDiagnosa)
+
